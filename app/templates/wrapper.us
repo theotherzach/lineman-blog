@@ -6,14 +6,19 @@
     <title><%= site.title %><%= post ? ' - '+post.title() : '' %></title>
   </head>
   <body>
-    <header>
-      <h1><%= site.title %></h1>
-      <nav>
-        <a href="/">home</a> | <a href="/archive.html">archives</a>
-      </nav>
-    </header>
+    <div id="wrap">
+      <header>
+        <div class="circle">
+          <div class="target"></div>
+        </div>
+        <nav>
+          <div class="navItem"><a href="/">home</a></br></div>
+          <div class="navItem"><a href="/archive.html">archives</a></br></div>
+        </nav>
+      </header>
 
-    <%= yield %>
+      <%= yield %>
+    </div>
 
     <footer>
       Copyright <%= site.author %>, <%= new Date().getFullYear() %>.

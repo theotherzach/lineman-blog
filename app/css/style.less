@@ -1,3 +1,64 @@
 body {
   font-size: 16px;
 }
+
+#wrap {
+  position: relative;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border: solid 25px;
+  border-color: green;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  flex-pack: center;
+  box-sizing: border-box;
+}
+
+.target {
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  padding: 0;
+  border: solid 30px;
+  border-color: green;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  box-sizing: border-box;
+}
+
+nav {
+  position: absolute;
+  left: 0px;
+  width: 200px;
+}
+
+.navItem {
+  background: green;
+  width: 150px;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 120%;
+  transition: 2s;
+}
+
+.navItem:hover {
+  background: yellow;
+}
+
+article {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.navigation {
+  position: absolute;
+  right: 0px;
+  width: 150px;
+}
