@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
     <link rel="alternate" type="application/rss+xml" title="<%= site.title %> - feed" href="/index.xml" />
     <title><%= site.title %><%= post ? ' - '+post.title() : '' %></title>
@@ -11,9 +12,10 @@
         <div class="circle">
           <div class="target"></div>
         </div>
+        <h1><span id="pageTitle">Test Double Learnin'</span></h1>
         <nav>
-          <div class="navItem"><a href="/">home</a></br></div>
-          <div class="navItem"><a href="/archive.html">archives</a></br></div>
+          <div class="navItem nav"><a href="/">home</a></br></div>
+          <div class="navItem nav"><a href="/archive.html">archives</a></br></div>
         </nav>
       </header>
 
